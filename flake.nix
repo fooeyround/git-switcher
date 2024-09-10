@@ -3,15 +3,15 @@ buildGoModule rec {
   pname = "git-switcher";
   version = "0.3.0";
 
-#  src = fetchFromGitHub {
-#    owner = "TheYkk";
-#    repo = "git-switcher";
-#    rev = "v${version}";
-#    hash = "sha256-Gjw1dRrgM8D3G7v6WIM2+50r4HmTXvx0Xxme2fH9TlQ=";
-#  };
+  src = fetchFromGitHub {
+    owner = "TheYkk";
+    repo = "git-switcher";
+    rev = "v${version}";
+    hash = "sha256-Gjw1dRrgM8D3G7v6WIM2+50r4HmTXvx0Xxme2fH9TlQ=";
+  };
 
-  src = "./.";
-  vendorHash = "sha256-ciBIR+a1oaYH+H1PcC8cD8ncfJczk1IiJ8iYNM+R6aA=";
+  #src = "./.";
+  vendorHash = null;
 
   CGO_ENABLED = 0;
 
