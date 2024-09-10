@@ -9,7 +9,7 @@ git-switcher = buildGoModule rec {
 #    hash = "sha256-Gjw1dRrgM8D3G7v6WIM2+50r4HmTXvx0Xxme2fH9TlQ=";
 #  };
   src = "./.";
-  venderSha256 = null;
+  vendorSha256 = null;
   vendorHash = "sha256-ciBIR+a1oaYH+H1PcC8cD8ncfJczk1IiJ8iYNM+R6aA=";
 
   meta = with lib; {
